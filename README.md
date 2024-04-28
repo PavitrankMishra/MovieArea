@@ -1,72 +1,35 @@
 Link to the website: https://pavitrankmishra.github.io/MovieArea/
 
-# Getting Started with Create React App
+### DESCRIPTION 
+Welcome to Movie Area - your ultimate destination for all things film! Dive into a world of cinematic wonders where you can explore, discover, and experience movies like never before. Powered by cutting-edge APIs, our platform brings you an extensive library of films at your fingertips.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Search for your favorite movies or browse through our curated collections to find hidden gems and timeless classics. With our intuitive search functionality, uncovering the perfect movie for your mood has never been easier. Whether you're in the mood for action-packed adventures, heartwarming dramas, or spine-tingling thrillers, we have something for every taste.
 
-## Available Scripts
+### FEATURES
+#### 1.) Fetching the Movie Details: The website uses OMDB API to fetch the results of the movies based on the search query.
+#### 2.) Searching the Movie: This platform provides you with functionality of searching the movie using queries you input in the navbar.
+#### 3.) Selecting the Movie: The movie items that are rendered in the area can be selected and dislayed in the right side of the movie.
+#### 4.) Custom Rating: The movie has its default IMDB rating but you can also provide your personalised rating based on your watching experience.
+#### 5.) Deleting the watched movie: The user can even delete the movie and remove it from the watched movie list.
+#### 7.) The webste is powerful in handling errors like displaying a LOADING ... statement while the movies are being loaded.
+#### 8.) If the fetch is failed than it will throw new error but if the error occurred than it will display error message.
+#### 9.) The website dynamically changes the title when we select a movie.
+#### 10.) It also uses a cleanup function that will be returned from an effect. For different occasions different cleanup functions are used and is also used when the component has been unmounted.
+#### 11.) It uses different functionalities of the React.js i.e. object destructuring, using useState, using useEffect, using cleanup function, conditionally rendering different components, using the concept of optional chaining. 
+#### 12.) The website uses array.filter to filter the out the selected movie.
+# UI SCREENSHOTS
+Landing Page
+![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/9ffa1cf6-cfc1-48c1-b74f-44139261d339)
 
-In the project directory, you can run:
+Selecting a movie
+![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/07487ccd-ffc1-48df-ac56-f1073c48a693)
 
-### `npm start`
+Adding a movie after rating
+![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/362d967c-ebd7-4773-ba78-9772c65cbe53)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Updated list of Movies you Watched
+![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/d0e5a95b-bb35-47c5-ac1b-e553e043b41f)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Movie Not Found State
+![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/ba4de8d0-bd09-442e-a136-3c75ccf53358)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
