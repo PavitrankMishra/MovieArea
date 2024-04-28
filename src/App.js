@@ -90,7 +90,7 @@ export default function App() {
   const [isLoading, setisLoading] = useState(false);
   const [error, setError] = useState("");
   const [query, setQuery] = useState("inception");
-  const tempQuery = "interstellar";
+  // const tempQuery = "interstellar";
   const [selectedId, setSelectedId] = useState(null);
   // const query = "intervfgbgfbfstellar";
 
@@ -312,7 +312,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     Released: released,
     Actors: actors,
     Director: director,
-    Genre: genre,
+    // Genre: genre,
   } = movie;
 
   // console.log(title, year);
