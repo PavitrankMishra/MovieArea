@@ -17,6 +17,8 @@ Search for your favorite movies or browse through our curated collections to fin
 #### 10.) It also uses a cleanup function that will be returned from an effect. For different occasions different cleanup functions are used and is also used when the component has been unmounted.
 #### 11.) It uses different functionalities of the React.js i.e. object destructuring, using useState, using useEffect, using cleanup function, conditionally rendering different components, using the concept of optional chaining. 
 #### 12.) The website uses array.filter to filter the out the selected movie.
+#### 13.) The code also consist of a custom components StarRating that generates star based on the need of the user.
+
 # UI SCREENSHOTS
 Landing Page
 ![image](https://github.com/PavitrankMishra/MovieArea/assets/90948148/9ffa1cf6-cfc1-48c1-b74f-44139261d339)
