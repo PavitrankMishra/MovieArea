@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import StarRating from "./StarRating";
 
 const tempMovieData = [];
@@ -19,6 +19,20 @@ function Logo() {
 }
 
 function Search({ query, setQuery }) {
+  const inputEl = useRef(null);
+  useEffect(function () {
+    function callback(e) {
+      if (document.activeElement === inputEl.current) return;
+      if (e.code === "Enter") {
+        inputEl.current.focus();
+        setQuery("");
+      }
+    }
+
+    document.addEventListener("keydown", callback);
+    return () => document.addEventListener("keydown", callback);
+  }, []);
+
   return (
     <input
       className="search"
@@ -26,6 +40,7 @@ function Search({ query, setQuery }) {
       placeholder="Search movies..."
       value={query}
       onChange={(e) => setQuery(e.target.value)}
+      ref={inputEl}
     />
   );
 }
@@ -43,7 +58,7 @@ const KEY = `77b1f25f`;
 
 export default function App() {
   const [movies, setMovies] = useState(tempMovieData);
-  
+
   const [isLoading, setisLoading] = useState(false);
   const [error, setError] = useState("");
   const [query, setQuery] = useState("mission impossible");
@@ -51,7 +66,7 @@ export default function App() {
   const [selectedId, setSelectedId] = useState(null);
   // const query = "intervfgbgfbfstellar";
   // const [watched, setWatched] = useState([]);
-  const [watched, setWatched] = useState(function() {
+  const [watched, setWatched] = useState(function () {
     const storedValue = localStorage.getItem("watched");
     return JSON.parse(storedValue);
   });
